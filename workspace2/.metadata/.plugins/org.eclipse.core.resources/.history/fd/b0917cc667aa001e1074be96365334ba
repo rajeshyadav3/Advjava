@@ -1,0 +1,40 @@
+package com.web;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/RegisterServlet")
+public class RegisterServlet extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		 response.setContentType("text/html");
+	        PrintWriter out = response.getWriter();
+	        
+	        String ename = request.getParameter("EmployeeName");
+	        String email = request.getParameter("EmployeeEmailid");
+	        String password = request.getParameter("Password");
+	        String salary = request.getParameter("Salary");
+	        String gender = request.getParameter("Gender");
+	        
+	        System.out.println("Employee Name: " + ename);
+	        System.out.println("Email: " + email);
+	        System.out.println("Password: " + password);
+	        System.out.println("Salary: " + salary);
+	        System.out.println("Gender: " + gender);
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		doGet(request, response);
+	}
+
+}

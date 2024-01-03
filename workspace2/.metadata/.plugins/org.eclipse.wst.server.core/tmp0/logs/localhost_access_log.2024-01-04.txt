@@ -1,0 +1,13 @@
+127.0.0.1 - - [04/Jan/2024:00:02:09 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:02:10 +0530] "GET /EmpWebApp/Register.html HTTP/1.1" 200 1401
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:02:55 +0530] "POST /EmpWebApp/RegisterServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:05:40 +0530] "POST /EmpWebApp/RegisterServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:06:02 +0530] "GET /EmpWebApp/RegisterServlet HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jan/2024:00:12:21 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:12:22 +0530] "GET /EmpWebApp/Register.html HTTP/1.1" 200 1397
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:12:43 +0530] "POST /EmpWebApp/RegisterServlet HTTP/1.1" 200 238
+127.0.0.1 - - [04/Jan/2024:00:16:42 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:16:43 +0530] "GET /EmpWebApp/RegisterServlet HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:17:33 +0530] "GET /EmpWebApp/Register.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:17:49 +0530] "POST /EmpWebApp/RegisterServlet HTTP/1.1" 200 234
+0:0:0:0:0:0:0:1 - - [04/Jan/2024:00:32:43 +0530] "POST /EmpWebApp/RegisterServlet HTTP/1.1" 200 231

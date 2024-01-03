@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+ Go to <a href="HiServlet">Hi servlet</a><br/><br/>
+ Go to <a href="HelloServlet">Hello servlet</a><br/><br/>
+ 
+</body>
+</html>

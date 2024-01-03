@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login page</title>
+</head>
+<body>
+<form action ="">
+<table>
+
+<tr>
+<td>Enter emailid<td/>
+<td><input type="text" name="emailid"/><td/>
+<tr/>
+
+<tr>
+<td>Enter password<td/>
+<td><input type="text" name="emailid"/><td/>
+<tr/>
+
+<a href="LoginServlet"/>LoginServlet<a/>
+
+</table>
+
+
+
+</form>
+</body>
+</html>
