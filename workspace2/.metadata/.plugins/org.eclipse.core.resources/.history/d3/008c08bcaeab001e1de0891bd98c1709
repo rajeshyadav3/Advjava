@@ -1,0 +1,59 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.db.DbConnection;
+import com.dto.Employee;
+
+public class EmployeeDAO {
+	
+	public Employee empLogin(String emailId, String password) {
+	    Connection con = DbConnection.getConnection();
+	    PreparedStatement pst = null;
+	    ResultSet rs = null;
+
+	    String loginQuery = "SELECT * FROM emp WHERE emailId=? AND password=?";
+
+	    try {
+	        pst = con.prepareStatement(loginQuery);
+	        pst.setString(1, emailId);
+	        pst.setString(2, password);
+	        rs = pst.executeQuery();
+
+	        if (rs != null && rs.next()) {
+	            Employee emp = new Employee();
+	            emp.setEmpId(rs.getInt("empId"));
+	            emp.setEmpName(rs.getString("empName"));
+	            emp.setSalary(rs.getDouble("salary"));
+	            emp.setGender(rs.getString("gender"));
+	            emp.setEmailId(rs.getString("emailId"));
+	            emp.setPassword(rs.getString("password"));
+	            return emp;
+	        }
+
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    } finally {
+	        if (con != null) {
+	            try {
+	                if (rs != null) {
+	                    rs.close();
+	                }
+	                if (pst != null) {
+	                    pst.close();
+	                }
+	                con.close();
+	            } catch (SQLException e) {
+	                e.printStackTrace();
+	            }
+	        }
+	    }
+
+	    return null;
+	}
+
+
+}

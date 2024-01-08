@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register page</title>
+</head>
+<body>
+
+<form action="RegisterServlet" method='post'>
+    <table>
+
+        <tr>
+            <td>Enter Employee Name</td>
+            <td><input type="text" name="EmployeeName" placeholder="Enter Employee Name" /></td>
+        </tr>
+
+        <tr>
+            <td>Enter Email id</td>
+            <td><input type="text" name="EmployeeEmailid" placeholder="Enter Employee Emailid" /></td>
+        </tr>
+
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" name="Password" placeholder="Enter password" /></td>
+        </tr>
+
+        <tr>
+            <td>Enter Salary</td>
+            <td><input type="number" name="Salary" placeholder="Enter your salary" /></td>
+        </tr>
+
+        <tr>
+            <td>Select Gender</td>
+            <td>
+                <label><input type="radio" name="Gender" value="Male"> Male</label>
+                <label><input type="radio" name="Gender" value="Female"> Female</label>
+                <label><input type="radio" name="Gender" value="Other"> Other</label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><button type="submit">Register</button>Already User? <a href="Login.html">SignIn</a></td>
+        </tr>
+
+    </table>
+   
+</form>
+
+
+</body>
+</html>
