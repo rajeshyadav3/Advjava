@@ -29,7 +29,7 @@ public class Profile extends HttpServlet {
 		
 		//OR
 		
-		request.getRequestDispatcher("EmpHomePage").include(request, response);
+		request.getRequestDispatcher("EmpHomePage.jsp").include(request, response);
 		
 		out.println("<table border='2' align='center'>");
 
