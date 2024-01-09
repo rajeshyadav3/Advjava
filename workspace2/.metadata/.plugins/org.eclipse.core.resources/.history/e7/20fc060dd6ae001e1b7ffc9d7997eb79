@@ -10,7 +10,7 @@
 
 <%@ include file="HRHomePage.jsp" %>
 
-		
+		<% Employee emp = (Employee) request.getAttribute("emp"); %>
 
 			<table border="2" align="center">
 
