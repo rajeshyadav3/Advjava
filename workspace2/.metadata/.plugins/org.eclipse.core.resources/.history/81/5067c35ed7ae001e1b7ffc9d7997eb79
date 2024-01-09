@@ -27,7 +27,7 @@
 
 		<tr>
 			<td> ${ emp.empId } </td>
-			<td> ${ emp.empName } </td>  
+			<td> ${ emp.empName } </td>
 			<td> ${ emp.salary } </td>
 			<td> ${ emp.gender } </td>
 			<td> ${ emp.emailId } </td>

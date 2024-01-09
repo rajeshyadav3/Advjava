@@ -14,7 +14,7 @@
 
 <%@ include file="HRHomePage.jsp" %>
 
-	
+	<% List<Employee> empList = (List<Employee>) request.getAttribute("empList"); %>
 
 	<table border="2" align="center">
 
