@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<%@ include file="HRHomePage.jsp" %>
+<jsp:include page="HRHomePage.jsp" />
 
 	
 
@@ -24,19 +24,24 @@
 			<th>Salary</th>
 			<th>Gender</th>
 			<th>Email-Id</th>
+			<th colspan="2">Actions</th>
 		</tr>
 
 		<c:forEach var="emp" items="${empList}">
 		
 		<tr>
-			<td> ${ emp.empId } </td>
+			<td> ${ emp.empId   } </td>
 			<td> ${ emp.empName } </td>
-			<td> ${ emp.salary } </td>
-			<td> ${ emp.gender } </td>
+			<td> ${ emp.salary  } </td>
+			<td> ${ emp.gender  } </td>
 			<td> ${ emp.emailId } </td>
+			<td> <a href='EditEmployee?empId=${emp.empId}'>Edit</a> </td>
+			<td> <a href='DeleteEmployee?empId=${emp.empId}'>Delete</a> </td>
 		</tr>
 		
 		</c:forEach>
+		
+		
 
 	</table>
 

@@ -194,5 +194,78 @@ public class EmployeeDAO {
 		return null;
 	}
 
+	public int deleteEmployee(int empId) {
+		Connection con = DbConnection.getConnection();
+		PreparedStatement pst = null;
+		
+		String deleteQuery = "delete from emp where empId=?";
+		
+		
+		try {
+			pst = con.prepareStatement(deleteQuery);
+			pst.setInt(1, empId);
+			
+			return pst.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		finally {
+			if (con != null) {
+				try {
+					pst.close();
+					con.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+		return 0;
+		
+	}
+
+	public int updateEmployee(Employee emp) {
+		
+		Connection con = DbConnection.getConnection();
+		PreparedStatement pst = null;
+		
+		String updateQuery = "update employee set empName=?, salary=?, gender=?, emailId=?, password=? where empId=?";
+		
+		try {
+			pst = con.prepareStatement(updateQuery);
+			
+			pst.setString(1, emp.getEmpName());
+			pst.setDouble(2, emp.getSalary());
+			pst.setString(3, emp.getGender());
+			pst.setString(4, emp.getEmailId());
+			pst.setString(5, emp.getPassword());
+			pst.setInt(6, emp.getEmpId());
+			
+			return pst.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		finally {
+			if (con != null) {
+				try {
+					pst.close();
+					con.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return 0;
+		
+	}
+
+	
+
+
 
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<%@ include file="HRHomePage.jsp" %>
+   <jsp:include page="HRHomePage.jsp" />
 
 		
 

@@ -8,7 +8,7 @@
 </head>
 
 
-<body bgcolor='lightyellow' text='green'>
+<body bgcolor='yellow' text='green'>
 
 		<% String emailId = (String) session.getAttribute("emailId"); %>
 

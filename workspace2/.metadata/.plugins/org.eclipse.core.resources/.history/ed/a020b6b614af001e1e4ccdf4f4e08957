@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login page</title>
+</head>
+<body>
+<form action ="LoginServlet" method='get'>
+<table>
+
+<tr>
+<td>Enter emailId<td/>
+<td><input type="text" name="emailId" placeholder="Enter emailId"/><td/>
+<tr/>
+
+<tr>
+<td>Enter password<td/>
+<td><input type="password" name="password" placeholder="Enter password"/><td/>
+<tr/>
+
+<a href="LoginServlet"/>LoginServlet<a/>
+
+<tr>
+<td><td/>
+<td><button>Login</button> New User? <a href="Register.html">SignUp</a><td/>
+<tr/>
+
+</table>
+
+
+
+</form>
+</body>
+</html>

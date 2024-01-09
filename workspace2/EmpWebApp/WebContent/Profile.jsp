@@ -13,7 +13,7 @@
 <title>Employee Profile</title>
 </head>
 <body>
-	<jsp:include page="EmpHomePage.jsp" />
+	<jsp:include page="EmpHomePage.jsp" /> 
 
 	<table border='2' align='center'>
 		<tr>
